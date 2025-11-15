@@ -16,6 +16,8 @@
 
 ---
 
+<img src="https://github.com/markusbegerow/local-llm-chat-ssms/blob/164f31ed1defb17883ca7a48eb450fd6113ba578/Resources/local-llm-ssms.png">
+
 ## Features
 
 ### 🤖 Local AI Chat for SQL Server
