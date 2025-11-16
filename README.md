@@ -40,6 +40,7 @@
 ### ⚡ Slash Commands
 Built-in slash commands for quick actions:
 - `/help` - Display all available commands
+- `/info` - Show extension information (author, version, GitHub)
 - `/config` - Show current LLM configuration (API URL, model, settings)
 - `/read <file-path>` - Read a SQL script or file into context
 - `/list [directory]` - List files in a directory
@@ -168,6 +169,7 @@ Type these commands in the chat window:
 | Command | Description | Example |
 |---------|-------------|---------|
 | `/help` | Show all available commands | `/help` |
+| `/info` | Show extension information | `/info` |
 | `/config` | Display current configuration | `/config` |
 | `/read <file-path>` | Read a SQL script or file | `/read scripts\backup.sql` |
 | `/list [directory]` | List files in directory | `/list C:\SQLScripts` |
