@@ -1,0 +1,53 @@
+<UserControl x:Class="LocalLlmChatSsms.ChatWindowControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Chat-Historie -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+            <ItemsControl x:Name="MessagesList">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="0,4"
+                                Padding="6"
+                                CornerRadius="4"
+                                Background="{Binding Background}">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Role}"
+                                           FontWeight="Bold"
+                                           FontSize="11" />
+                                <TextBox Text="{Binding Content, Mode=OneWay}"
+                                         IsReadOnly="True"
+                                         TextWrapping="Wrap"
+                                         BorderThickness="0"
+                                         Background="Transparent"
+                                         Margin="0,2,0,0"
+                                         Cursor="IBeam" />
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Input Area -->
+        <DockPanel Grid.Row="1" Margin="0,8,0,0">
+            <Button x:Name="SendButton"
+                    Content="Send"
+                    Width="80"
+                    Margin="8,0,0,0"
+                    DockPanel.Dock="Right"
+                    Click="SendButton_Click"/>
+            <TextBox x:Name="InputBox"
+                     AcceptsReturn="True"
+                     Height="60"
+                     VerticalScrollBarVisibility="Auto"
+                     TextWrapping="Wrap"
+                     KeyDown="InputBox_KeyDown"/>
+        </DockPanel>
+    </Grid>
+</UserControl>

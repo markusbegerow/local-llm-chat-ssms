@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\SYSADM.DERONB18\\source\\repos\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\SYSADM.DERONB18\\source\\repos\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SYSADM.DERONB18\\source\\repos\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
+        "projectName": "VSIXProject1",
+        "projectPath": "C:\\Users\\SYSADM.DERONB18\\source\\repos\\VSIXProject1\\VSIXProject1\\VSIXProject1.csproj",
+        "packagesPath": "C:\\Users\\SYSADM.DERONB18\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SYSADM.DERONB18\\source\\repos\\VSIXProject1\\VSIXProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\SYSADM.DERONB18\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[17.7.2196, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.32112.339, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
